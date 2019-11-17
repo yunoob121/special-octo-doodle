@@ -32,9 +32,9 @@ body:before {
 }
 
 .top-nav-collapse {
-  background-color: #8b0000;}
+  background-color: #b81b1b;}
 
-.navbar:not(.top-nav-collapse) {background: #061b3d;}
+.navbar:not(.top-nav-collapse) {background: #b81b1b;}
 
 #intro .h6 {
   font-family: "Andale Mono", monospace;
