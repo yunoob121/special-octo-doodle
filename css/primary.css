@@ -35,6 +35,17 @@ body:before {
   background-color: #b81b1b;}
 
 .navbar:not(.top-nav-collapse) {background: linear-gradient(360deg, #720000, #be0000);}
+
+/img/valk.png{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+
+
 #intro .h6 {
   font-family: "Andale Mono", monospace;
   font-weight: 350;
