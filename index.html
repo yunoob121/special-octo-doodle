@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html class="full-height" lang="en-US">
-  <head>
+<html lang="en-US">
+<head>
     <title> Kinglalu's TN</title>
     <link rel="icon" href="./img/logo.png">
     <meta charset="UTF-8">
@@ -13,56 +13,58 @@
     <link href="./css/primary.css" rel="stylesheet">
     <script src="js/main.js" defer></script>
     <script src="js/analytics.js" defer></script>
-  </head>
-  <body id="top">
+    <style>
+        #intro {
+            background-image: url('./img/space-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        #content {
+            z-index: 10;  /* Ensures it appears on top */
+            position: relative;
+            color: white;
+        }
+
+        #background {
+            z-index: 1;  /* Ensure background is behind content */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body id="top">
     <!-- Navbar-->
     <nav class="navbar white-text navbar-expand-lg navbar-dark fixed-top" id="navbar">
-      <div class="logo-image">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="./img/valk.png" width="40" height="30" alt="">
-            <strong> Kinglalu's TitaniumPhoenix</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link waves-effect waves-light" href="./selection3.html">Games</a></li>
-              <li class="nav-item"><a class="nav-link waves-effect waves-light" href="./selection2.html">Watch Movies/TV</a></li>
-              <li class="nav-item"><a class="nav-link waves-effect waves-light" href="./contributors.html">Staff & Contributors</a></li>
-            </ul>
-            <a class="btn btn-primary btn-rounded my-0 waves-effect waves-light" href="https://github.com/titaniumnetwork-dev" target="_blank">Check us out on Github!</a>
-          </div>
+        <div class="logo-image">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/valk.png" width="40" height="30" alt="">
+                    <strong> Kinglalu's TitaniumPhoenix</strong>
+                </a>
+            </div>
         </div>
-      </div>
     </nav>
+    
     <header>
-      <section class="animated fadeIn view hm-gradient intro" id="intro">
-        <div class="full-bg-img d-flex align-items-center">
-          <div class="container">
-            <div class="row">
-              <div class="wow white-text" style="visibility:visible">
+        <section id="intro">
+            <!-- Space Background -->
+            <div id="background"></div>
+
+            <!-- Content -->
+            <div id="content">
                 <h2 class="h2-responsive font-bold mt-sm-2">Kinglalu's Titanium Network</h2>
                 <h3 class="h3-responsive font-bold mt-sm-3">MOTD of 1/15/20 - Sites no longer maintained, Prob broken.</h3>
                 <div class="h6">With TitaniumNetwork's services, you can browse the internet freely without restriction...</div>
                 <div class="h6">With absolutely no user data being stored on our end & our use of 128-bit SSL...</div>
-                <div class="h6">Our Games section has an amazing selection of both Flash and HTML-based games...</div>
-                <div class="h6">If you need to contact any staff about any concerns or suggestions, <a href="contact.html"><font color="white">click here.</font></a></div>
-                <h6 class="h6">Use the navigation below to select your destination!</h6>
-              </div>
-              <div class="wow" style="visibility: visible;">
-                <a class="btn btn-outline-white waves-effect waves-light" href="selection.html">Surf Freely</a>
-                <a class="btn btn-outline-white waves-effect waves-light" href="bookmarklets.html">Bookmarklets</a>
-                <a class="btn btn-outline-white waves-effect waves-light" href="https://donorbox.org/titaniumnetwork">Support TitaniumNetwork</a>
-                <a class="btn btn-outline-white waves-effect waves-light" href="forum.html">Community Forum</a>
-                <a class="btn btn-outline-white waves-effect waves-light" href="talk.html">Use our Chatbox</a>
-                <a class="btn btn-outline-white waves-effect waves-light" href="https://www.clipconverter.cc/2/">Youtube video downloader</a>
-              </div>
+                <a href="https://discord.gg/YOUR_INVITE_LINK" target="_blank" class="btn btn-primary">Join Our Discord</a>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </header>
-  </body>
+</body>
 </html>
